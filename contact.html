@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>اتصل بنا | مؤسسة وايت ماء الرياض</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-waiet navbar-waiet-modern">
+        <div class="navbar-water-line"></div>
+        <div class="container">
+            <a class="navbar-brand navbar-brand-modern" href="./index.html">
+                <span class="navbar-brand-icon">💧</span>
+                مؤسسة وايت ماء الرياض
+            </a>
+            <button class="navbar-toggler navbar-toggler-modern" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="القائمة">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto navbar-nav-modern">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">عن المؤسسة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./privacy.html">سياسة الخصوصية</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./contact.html">اتصل بنا</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-contact">
+            <div class="container text-center text-white">
+                <h1 class="hero-contact-title">تواصل معنا</h1>
+                <p class="hero-contact-subtitle">نحن هنا لخدمتك على مدار الساعة</p>
+            </div>
+        </section>
+
+        <!-- Contact Cards -->
+        <section class="section page-content-modern">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <p class="contact-intro text-center mb-5">
+                            للطلب أو الاستفسار تواصل معنا عبر الهاتف أو الواتساب. نخدم جميع أحياء الرياض على مدار 24 ساعة.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-lg-5 mb-4">
+                        <div class="contact-card contact-card-phone">
+                            <div class="contact-card-icon">📞</div>
+                            <h2 class="contact-card-title">اتصل بنا</h2>
+                            <p class="contact-card-number">+966 56 253 6772</p>
+                            <p class="contact-card-desc">اتصل الآن واحصل على خدمة سريعة</p>
+                            <a class="btn btn-dark-blue btn-lg rounded-pill px-4 btn-throb" href="tel:+966562536772">
+                                اتصل الآن
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-5 mb-4">
+                        <div class="contact-card contact-card-whatsapp">
+                            <div class="contact-card-icon">💬</div>
+                            <h2 class="contact-card-title">واتساب</h2>
+                            <p class="contact-card-number">+966 56 253 6772</p>
+                            <p class="contact-card-desc">أرسل طلبك مع عنوان التوصيل</p>
+                            <a class="btn btn-whatsapp btn-lg rounded-pill px-4 btn-throb" href="https://api.whatsapp.com/send/?phone=966562536772&text=السلام%20عليكم%20أريد%20طلب%20وايت%20ماء%206%20طن" target="_blank" rel="noopener">
+                                <img class="wa-icon" src="./img/whatsApp.png" alt="واتساب"> ارسال طلب
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Info -->
+                <div class="row mt-5">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="contact-info-box">
+                            <h3 class="contact-info-title">معلومات التواصل</h3>
+                            <div class="contact-info-item">
+                                <span class="contact-info-label">⏰</span>
+                                <span class="contact-info-text">خدمة متاحة على مدار 24 ساعة</span>
+                            </div>
+                            <div class="contact-info-item">
+                                <span class="contact-info-label">📍</span>
+                                <span class="contact-info-text">نغطي جميع أحياء الرياض</span>
+                            </div>
+                            <div class="contact-info-item">
+                                <span class="contact-info-label">💧</span>
+                                <span class="contact-info-text">وايت ماء بسعة 6 طن</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container text-center">
+            <p class="mb-0">جميع الحقوق محفوظة © <span id="year"></span> مؤسسة وايت ماء الرياض</p>
+        </div>
+    </footer>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

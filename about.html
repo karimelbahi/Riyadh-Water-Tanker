@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>عن المؤسسة | مؤسسة وايت ماء الرياض</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-waiet navbar-waiet-modern">
+        <div class="navbar-water-line"></div>
+        <div class="container">
+            <a class="navbar-brand navbar-brand-modern" href="./index.html">
+                <span class="navbar-brand-icon">💧</span>
+                مؤسسة وايت ماء الرياض
+            </a>
+            <button class="navbar-toggler navbar-toggler-modern" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="القائمة">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto navbar-nav-modern">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./about.html">عن المؤسسة</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./privacy.html">سياسة الخصوصية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">اتصل بنا</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-about">
+            <div class="container text-center text-white">
+                <h1 class="hero-about-title">عن مؤسسة وايت ماء الرياض</h1>
+                <p class="hero-about-subtitle">خدمة موثوقة لتوصيل مياه التحلية في جميع أحياء الرياض</p>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <section class="section page-content-modern">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <div class="about-content-card">
+                            <div class="about-icon-wrapper">
+                                <span class="about-icon">💧</span>
+                            </div>
+                            <h2 class="about-section-title">من نحن</h2>
+                            <p class="about-text">
+                                مؤسسة وايت ماء الرياض متخصصة في توصيل مياه التحلية الصالحة للشرب في جميع أحياء الرياض. نقدم خدمة وايت ماء بسعة 6 طن مع تعقيم الصهريج قبل كل تعبئة، ونسعى لتقديم أسرع توصيل وأعلى جودة في كل مناطق الرياض.
+                            </p>
+                            <p class="about-text">
+                                نعمل على مدار 24 ساعة لخدمة المنازل، الاستراحات، المسابح، والشركات، مع إمكانية التعاقد الشهري أو السنوي للمشاريع.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Features Grid -->
+                <div class="row mt-5">
+                    <div class="col-md-4 mb-4">
+                        <div class="about-feature-card">
+                            <div class="about-feature-icon">⚡</div>
+                            <h3 class="about-feature-title">سرعة التوصيل</h3>
+                            <p class="about-feature-text">نوصل لموقعك في أسرع وقت ممكن مع فريق محترف جاهز على مدار الساعة</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="about-feature-card">
+                            <div class="about-feature-icon">✨</div>
+                            <h3 class="about-feature-title">جودة عالية</h3>
+                            <p class="about-feature-text">مياه محلاة نقية وصالحة للشرب مع تعقيم كامل للصهريج قبل كل تعبئة</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="about-feature-card">
+                            <div class="about-feature-icon">📍</div>
+                            <h3 class="about-feature-title">تغطية شاملة</h3>
+                            <p class="about-feature-text">نغطي جميع أحياء الرياض شمالاً وجنوباً وشرقاً وغرباً</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CTA Section -->
+                <div class="text-center mt-5">
+                    <a class="btn btn-dark-blue btn-lg px-5 rounded-pill shadow btn-throb" href="./contact.html">
+                        تواصل معنا الآن
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container text-center">
+            <p class="mb-0">جميع الحقوق محفوظة © <span id="year"></span> مؤسسة وايت ماء الرياض</p>
+        </div>
+    </footer>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

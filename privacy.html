@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>سياسة الخصوصية | مؤسسة وايت ماء الرياض</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-waiet navbar-waiet-modern">
+        <div class="navbar-water-line"></div>
+        <div class="container">
+            <a class="navbar-brand navbar-brand-modern" href="./index.html">
+                <span class="navbar-brand-icon">💧</span>
+                مؤسسة وايت ماء الرياض
+            </a>
+            <button class="navbar-toggler navbar-toggler-modern" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="القائمة">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto navbar-nav-modern">
+                    <li class="nav-item">
+                        <a class="nav-link" href="./index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./about.html">عن المؤسسة</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="./privacy.html">سياسة الخصوصية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contact.html">اتصل بنا</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-privacy">
+            <div class="container text-center text-white">
+                <h1 class="hero-privacy-title">سياسة الخصوصية</h1>
+                <p class="hero-privacy-subtitle">نحن ملتزمون بحماية خصوصيتك</p>
+            </div>
+        </section>
+
+        <!-- Privacy Content -->
+        <section class="section page-content-modern">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-9">
+                        <div class="privacy-content-card">
+                            <div class="privacy-icon-wrapper">
+                                <span class="privacy-icon">🔒</span>
+                            </div>
+                            
+                            <h2 class="privacy-section-title">التزامنا بحماية خصوصيتك</h2>
+                            <p class="privacy-text">
+                                نحن في مؤسسة وايت ماء الرياض نحترم خصوصيتك ونلتزم بحماية بياناتك الشخصية. البيانات التي نجمعها عبر الاتصال أو الواتساب تُستخدم فقط لتنفيذ طلبك وتوصيل الخدمة، ولا نشاركها مع أطراف ثالثة لأغراض تسويقية.
+                            </p>
+
+                            <h3 class="privacy-subtitle">البيانات التي نجمعها</h3>
+                            <p class="privacy-text">
+                                عند التواصل معنا، قد نجمع المعلومات التالية:
+                            </p>
+                            <ul class="privacy-list">
+                                <li>اسمك ورقم هاتفك</li>
+                                <li>عنوان التوصيل</li>
+                                <li>تفاصيل الطلب (حجم الوايت، التوقيت المفضل)</li>
+                            </ul>
+
+                            <h3 class="privacy-subtitle">كيف نستخدم بياناتك</h3>
+                            <p class="privacy-text">
+                                نستخدم البيانات التي نجمعها فقط للأغراض التالية:
+                            </p>
+                            <ul class="privacy-list">
+                                <li>معالجة طلبك وتوصيل الخدمة</li>
+                                <li>التواصل معك بخصوص طلبك</li>
+                                <li>تحسين جودة الخدمة</li>
+                            </ul>
+
+                            <h3 class="privacy-subtitle">حماية البيانات</h3>
+                            <p class="privacy-text">
+                                نتخذ إجراءات أمنية مناسبة لحماية بياناتك الشخصية من الوصول غير المصرح به أو التغيير أو الكشف أو التدمير.
+                            </p>
+
+                            <h3 class="privacy-subtitle">التواصل معنا</h3>
+                            <p class="privacy-text">
+                                لأي استفسار حول البيانات أو الخصوصية يمكنك التواصل معنا عبر صفحة <a href="./contact.html" class="privacy-link">اتصل بنا</a>.
+                            </p>
+
+                            <div class="privacy-update">
+                                <p class="privacy-update-text">
+                                    <strong>آخر تحديث:</strong> تم تحديث هذه السياسة في <span id="privacy-date"></span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="container text-center">
+            <p class="mb-0">جميع الحقوق محفوظة © <span id="year"></span> مؤسسة وايت ماء الرياض</p>
+        </div>
+    </footer>
+
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
+        const date = new Date();
+        const options = { year: 'numeric', month: 'long', day: 'numeric' };
+        document.getElementById('privacy-date').textContent = date.toLocaleDateString('ar-SA', options);
+    </script>
+</body>
+</html>
