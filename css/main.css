@@ -5,6 +5,26 @@ body {
     font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 
+/* Skip link for accessibility & SEO (focus visible for keyboard users) */
+.skip-link {
+    position: absolute;
+    top: -3rem;
+    right: 1rem;
+    z-index: 9999;
+    padding: 0.5rem 1rem;
+    background: #0c5aa8;
+    color: #fff;
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: top 0.2s ease;
+}
+.skip-link:focus {
+    top: 0.5rem;
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
 .navbar-waiet {
     background-color: #0c5aa8 !important;
 }
