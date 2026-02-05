@@ -226,11 +226,25 @@ body {
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+        gap: 0.75rem;
     }
     
     .hero-buttons .btn {
         width: 100%;
         max-width: 300px;
+        margin: 0 !important;
+    }
+    
+    .cta-buttons {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.75rem;
+    }
+    
+    .cta-buttons .btn {
+        width: 100%;
+        max-width: 280px;
+        margin: 0 !important;
     }
 }
 
@@ -418,6 +432,15 @@ body {
     background-color: #0c5aa8;
     color: #fff;
     padding: 2.5rem 1rem;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
 }
 
 .site-footer {
