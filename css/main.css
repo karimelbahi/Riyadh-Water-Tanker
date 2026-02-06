@@ -281,6 +281,16 @@ body {
     background: linear-gradient(180deg, #f5f7fb 0%, #ffffff 100%);
 }
 
+/* Reduce motion for users/devices that prefer it (lighter scrolling) */
+@media (prefers-reduced-motion: reduce) {
+    .hero-wave,
+    .hero-wave-2,
+    .hero-water-icon,
+    .btn-throb {
+        animation: none !important;
+    }
+}
+
 .nearest-waiet-intro {
     max-width: 800px;
     margin-left: auto;
